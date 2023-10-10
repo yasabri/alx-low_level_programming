@@ -8,7 +8,7 @@ void print_alphabet ten times(void)
 {
 	char line, ch;
 
-	for (line = 0; line <= 10; line++)
+	for (line = 0; line <= 9; line++)
 	{
 		for (ch = "a"; ch <= "z"; ch++)
 	
