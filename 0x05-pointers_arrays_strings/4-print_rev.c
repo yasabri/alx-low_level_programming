@@ -1,9 +1,9 @@
-i#include "main.h"
+#include "main.h"
 
 /**
  * print_rev - prints a string, in reverse, followed by a new line.
  * @s: input string.
- * Return
+ * Return: viod.
  */
 void print_rev(char *s)
 {
