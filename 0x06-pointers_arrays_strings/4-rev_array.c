@@ -3,7 +3,7 @@
  * reverse_array - reverses the content of an array of integers
  * @a:array
  * @n:integer
- * Return:()
+ * Return: ()
  */
 void reverse_array(int *a, int n)
 {
@@ -15,4 +15,4 @@ for (i = 0; (i < (n - 1) / 2); i++)
 	a[i] = a[n - 1 - i];
 	a[n - 1 - i] = c;
 	}
-}	
+}
