@@ -2,7 +2,7 @@
 
 /**
  * _strspn - a function that gets the length 
- * @s: @s: source string
+ * @s: source string
  * @accept: which consist only of bytes from
  * Return: the number of bytes
  */
