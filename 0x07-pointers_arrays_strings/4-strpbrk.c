@@ -1,29 +1,29 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
- * _strspn - a function that gets the length 
+ * _strpbrk - print the consecutive character of s1 that are inn s2
  * @s: source string
- * @accept: which consist only of bytes from
- * Return: the number of bytes
+ * @accept: seaching string
+ *
+ * Return: new string
  */
-
-unsigned int _strspn(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
-	int z = 0, x, y;
+	unsigned int i, j;
 
-	for (x = 0; s[x] != '\0'; x++)
+	for (i = 0; *(s + i); i++)
 	{
-		if (s[x] != 32)
+		for (j = 0; *(accept + j); j++)
 		{
-			for (y = 0; accept[y] != '\0'; y++)
+			if (*(s + i) == *(accept + j))
 			{
-				if (s[x] == accept[y])
-					z++;
+				break;
 			}
 		}
-		else
-			return (z);
+		if (*(accept + j) != '\0')
+		{
+			return (s + i);
+		}
 	}
-		return (z);
-
+	return (0);
 }
