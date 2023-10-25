@@ -1,4 +1,4 @@
-[200~#ifndef Main_h
+#ifndef Main_h
 #define Main_h
 
 
