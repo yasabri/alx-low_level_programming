@@ -1,20 +1,16 @@
-#ifndef DOG_H
-#define DOG_H
-
 /**
- * struct dog - a dog's basic info
- * @name: name member
- * @age: age of member
- * @owner: owner member
- *
- * Description: Longer description
+ * struct dog - Struct dog
+ * @name: name
+ * @age: age
+ * @owner:  owner
+ * Description: This struct is for dog
  */
 
-#include <stdio.h>
-struct dog{
-    char * = name
-    float = age
-    char * = owner
+struct dog
+{
+	char *name;
+	float age;
+	char *owner;
 };
 
 typedef struct dog dog_t;
