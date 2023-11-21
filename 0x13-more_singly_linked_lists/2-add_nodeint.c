@@ -1,10 +1,10 @@
 #include "lists.h"
 
 /**
- * add_nodeint - add a new node at the beginning
- * of a linked list
+ * add_nodeint - add a new node at the beginning of a linked list
  * @head: head list
  * @n: integer for node
+ *
  * Return: address of the new elementor null if it failed
  */
 listint_t *add_nodeint(listint_t **head, const int n)
