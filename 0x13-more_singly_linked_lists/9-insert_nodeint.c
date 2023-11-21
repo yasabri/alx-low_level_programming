@@ -6,7 +6,7 @@
  *
  * @head: pointer to pointer to head
  * @idx: The index of the list into which the new node should be inserted
- * @n: integer for the new node 
+ * @n: integer for the new node
  * Return: NULL if failed  or address of the new node
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
