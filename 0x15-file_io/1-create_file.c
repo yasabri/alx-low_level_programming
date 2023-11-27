@@ -2,8 +2,8 @@
 
 /**
  * create_file - Creates a file.
- * @text_content: a pointer to a text message to be entered into the file
- * @filename: the name of the file to create.
+ * @text_content: text message that has to be included to the file
+ * @filename: the name of the file to create
  * Return: failure -1 , or success 1
  */
 int create_file(const char *filename, char *text_content)
