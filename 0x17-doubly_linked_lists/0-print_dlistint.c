@@ -8,22 +8,22 @@
  */
 size_t print_dlistint(const dlistint_t *h)
 {
-        int total;
+	int total;
 
-        total = 0;
+	total = 0;
 
-        if (h == NULL)
-                return (total);
+	if (h == NULL)
+		return (total);
 
-        while (h->prev != NULL)
-                h = h->prev;
+	while (h->prev != NULL)
+		h = h->prev;
 
-        while (h != NULL)
-        {
-                printf("%d\n", h->n);
-                total++;
-                h = h->next;
-        }
+	while (h != NULL)
+	{
+		printf("%d\n", h->n);
+		total++;
+		h = h->next;
+	}
 
-        return (total);
+	return (total);
 }
