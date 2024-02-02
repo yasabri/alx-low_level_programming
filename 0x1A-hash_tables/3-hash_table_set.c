@@ -51,7 +51,7 @@ return (1);
 /**
  * create_new_node - create a new node
  * @value: value that corresponds to the key.
- * 	Value must be reiterated. value might be an empty string.
+ * Value must be reiterated. value might be an empty string.
  * @key: is essential. Key cannot consist of a blank string.
  * Return:  If 1 successful, if 0 unsuccessful
  */
