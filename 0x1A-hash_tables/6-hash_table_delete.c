@@ -20,9 +20,10 @@ free(ht->array);
 free(ht);
 }
 
+
 /**
- * free_hash_list - frees hash_node_t list
- * @head: linked list head
+ * free_hash_list - frees a hash_node_t list
+ * @head: head of linked list
  */
 void free_hash_list(hash_node_t *head)
 {
