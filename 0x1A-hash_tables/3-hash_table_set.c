@@ -7,6 +7,7 @@
  * @key: is essential. Key cannot consist of a blank string
  * Return:  If 1 successful, if 0 unsuccessful
  */
+
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	hash_node_t *new;
@@ -23,7 +24,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	index = key_index((const unsigned char *)key, ht->size);
 	for (i = index; ht->array[i]; i++)
 	{
-		if (strcmp(ht->array[x]->key, key) == 0)
+		if (strcmp(ht->array[i]->key, key) == 0)
 		{
 			free(ht->array[i]->value);
 			ht->array[i]->value = value_copy;
