@@ -1,33 +1,25 @@
 #include "hash_tables.h"
+
 /**
- * hash_table_print - prints hashtable
- * @ht: hash table you want to print
+ * hash_table_create - Creates a hash table.
+ * @size: size of array
+ * Return: If an error occurs - NULL or pointer to the new hash table.
  */
-void hash_table_print(const hash_table_t *ht)
+hash_table_t *hash_table_create(unsigned long int size)
 {
+	hash_table_t *ht;
+	unsigned long int i;
 
-unsigned long int i;
-hash_node_t *node;
-short int comma = 0;
+	ht = malloc(sizeof(hash_table_t));
+	if (ht == NULL)
+		return (NULL);
 
-if (ht == NULL)
-	return;
+	ht->size = size;
+	ht->array = malloc(sizeof(hash_node_t *) * size);
+	if (ht->array == NULL)
+		return (NULL);
+	for (i = 0; i < size; i++)
+		ht->array[i] = NULL;
 
-putchar('{');
-for (i = 0; i < ht->size; i++)
-{
-	node = ht->array[i];
-	while (node != NULL)
-	{
-		if (comma)
-			printf(", ");
-
-		printf("'%s': '%s'", node->key, node->value);
-		node = node->next;
-
-		if (comma == 0)
-			comma = 1;
-	}
-}
-printf("}\n");
+	return (ht);
 }
