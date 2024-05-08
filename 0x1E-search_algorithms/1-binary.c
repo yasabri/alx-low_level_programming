@@ -10,15 +10,15 @@
 int recursive_search(int *array, size_t size, int value)
 {
 	size_t half = size / 2;
-	size_t i;
+	size_t x;
 
 	if (array == NULL || size == 0)
 		return (-1);
 
 	printf("Searching in array");
 
-	for (i = 0; i < size; i++)
-		printf("%s %d", (i == 0) ? ":" : ",", array[i]);
+	for (x = 0; x < size; x++)
+		printf("%s %d", (x == 0) ? ":" : ",", array[x]);
 
 	printf("\n");
 
