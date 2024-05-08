@@ -41,7 +41,6 @@ int rec_search(int *array, size_t size, int value)
 
 /**
  * advanced_binary - calls to rec_search to return
- 	 index of the number
  * @array: input array
  * @value: value search
  * @size: size of array
